@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="validar.js"></script>
+    <title>pract1</title>
+</head>
+<body>
+<div class="principal">
+    <form method="get" name="registro" onsubmit="return validar(this)" action="pract1.html">
+    <label> nombre:</label>
+    <input class="cajas" type="text"  name="nombre"  id="nombre">
+    <br>
+    <br>
+    <input class="cajas" type="text"  name="edad"  id="edad">
+    <br>
+    <br>
+
+    <LEGend>seleccione un sexo:</LEGend>
+    <blockquote>
+    <label>Femenino</label>
+    <input class="cajas" type="radio"  name="sexo" value="femenino">
+    <label>Masculino </label>
+    <input class="cajas" type="radio"  name="sexo" value="masculino">
+    </blockquote>
+
+    <label>
+        <span>Deporte Favorito</span>
+        <select name="Deporte" id="Deporte">
+        <option value="futbol">futbol</option>
+        <option value="volley">volley</option>
+        <option value="tennis">tennis</option>
+        <option value="ninguno">ninguno</option>
+    </select>
+    </label>
+    <input class="boton" type="submit" value="enviar" id="enviar">
+    <input class="boton" type="submit" value="reset" id="reset">
+
+
+    </label>
+    </form>
+</div>
+</body>
+</html>
